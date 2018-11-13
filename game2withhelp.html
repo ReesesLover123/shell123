@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script> 
+        function shasell() {
+            var correct = (Math.floor(Math.random() * 3 + 1));
+            var alpha = document.getElementById("1");
+            var beta = document.getElementById("2");
+            var charlie = document.getElementById("3");
+            var results = document.getElementById("results")
+            alpha.src = "wrong.jpg";
+            beta.src = "wrong.jpg";
+            charlie.src ="wrong.jpg";
+             if ((correct == 1)) {
+                 document.getElementById("1").src = "right.jpg"
+                 document.getElementById("results").innerHTML = "You chose correct!";
+            } else if ((correct == 2)) {
+                 document.getElementById("2").src = "right.jpg";
+                 results.innerHTML = "You chose incorrectly! You picked two, but the answer was one!";
+            } else if ((correct == 3)) {
+                 document.getElementById("3").src = "right.jpg";
+                 results.innerHTML = "You chose incorrectly! You picked three, but the answer was one!";
+            }
+
+          }
+        function sashay() {
+            var correct = (Math.floor(Math.random() * 3 + 1));
+            var alpha = document.getElementById("1");
+            var beta = document.getElementById("2");
+            var charlie = document.getElementById("3");
+            var results = document.getElementById("results")
+            alpha.src = "wrong.jpg";
+            beta.src = "wrong.jpg";
+            charlie.src = "wrong.jpg";
+            if ((correct == 1)) {
+                document.getElementById("1").src = "right.jpg"
+                document.getElementById("results").innerHTML = "You chose incorrectly! You picked two, but the answer was one!";
+            } else if ((correct == 2)) {
+                document.getElementById("2").src = "right.jpg";
+                results.innerHTML = "You chose correctly!";
+            } else if ((correct == 3)) {
+                document.getElementById("3").src = "right.jpg";
+                results.innerHTML = "You chose incorrectly! You picked two, but the answer was three!";
+            }
+
+        }
+        function sashayn() {
+            var correct = (Math.floor(Math.random() * 3 + 1));
+            var alpha = document.getElementById("1");
+            var beta = document.getElementById("2");
+            var charlie = document.getElementById("3");
+            var results = document.getElementById("results")
+            alpha.src = "wrong.jpg";
+            beta.src = "wrong.jpg";
+            charlie.src = "wrong.jpg";
+            if ((correct == 1)) {
+                document.getElementById("1").src = "right.jpg"
+                document.getElementById("results").innerHTML = "You chose incorrectly! You picked three, but the answer was one!";
+            } else if ((correct == 2)) {
+                document.getElementById("2").src = "right.jpg";
+                results.innerHTML = "You chose incorrectly! You picked three, but the answer was two!";
+            } else if ((correct == 3)) {
+                document.getElementById("3").src = "right.jpg";
+                results.innerHTML = "You chose correctly!";
+            }
+
+        }
+    </script></head>
+<body>
+    <div id="alpha"><img src="shell.jpg" id="1" onclick="shasell()"/><img src="shell.jpg" onclick="sashay()" id="2"/> <img src="shell.jpg" onclick="sashayn()" id="3"/></div> 
+    <p id="results">Where is the pearl located?</p>
+    </body>
+</html>
